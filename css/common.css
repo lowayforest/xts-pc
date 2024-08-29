@@ -1,0 +1,276 @@
+/* 头尾各个页面相同的部分 */
+/* 版心 */
+.wrapper {
+    margin: 0 auto;
+    width: 1240px;
+}
+
+/* 快捷导航 */
+.shortcut {
+    height: 52px;
+    background-color: #333;
+}
+
+.shortcut .wrapper {
+    display: flex;
+    justify-content: flex-end;
+    height: 52px;
+    /* background-color: pink; */
+
+}
+
+.shortcut ul {
+    display: flex;
+    line-height: 52px;
+}
+
+.shortcut li a {
+    padding: 0 15px;
+    font-size: 14px;
+    color: #fff;
+    border-right: 1px solid #999999;
+}
+
+.shortcut li:last-child a {
+    padding-right: 0;
+    border-right: 0;
+}
+
+.shortcut .login {
+    color: #5EB69C;
+}
+
+.shortcut li .iconfont {
+    margin-right: 4px;
+    vertical-align: middle;
+}
+
+/* 头部 */
+.header {
+    display: flex;
+    height: 88px;
+    /* background-color: pink; */
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+
+/* logo */
+.header .logo {
+    margin-right: 41px;
+    width: 200px;
+    height: 88px;
+    /* background-color: skyblue; */
+}
+
+.header .logo a {
+    display: block;
+    width: 200px;
+    height: 88px;
+    background-image: url(../images/logo.png);
+    font-size: 0;
+}
+
+/* 导航 */
+.header .nav {
+    padding-top: 33px;
+    /* margin-left: 41px; */
+    margin-right: 75px;
+    height: 88px;
+    width: 673px;
+    /* background-color: skyblue; */
+}
+
+.header .nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .nav li a {
+    padding-bottom: 10px;
+    /* background-color: skyblue; */
+}
+
+.header .nav li:first-child a,
+.header .nav li a:hover {
+    color: #5EB69C;
+    border-bottom: 2px solid #5EB69C;
+}
+
+/* 搜索 */
+.header .search {
+    display: flex;
+    margin-top: 33px;
+    margin-right: 46px;
+    width: 170px;
+    height: 34px;
+    border-bottom: 2px solid #F4F4F4;
+}
+
+.header .search .iconfont {
+    margin-right: 8px;
+    font-size: 18px;
+    color: #ccc;
+    /* vertical-align: middle; */
+}
+
+.header .search input {
+    /* 浏览器优先生input的默认宽度，flex:1不生效，我们只需把input的宽度设置为0 */
+    width: 0;
+    flex: 1;
+}
+
+.header .search input::placeholder {
+    font-size: 16px;
+    color: #ccc;
+}
+
+/* 购物车 */
+.header .cart {
+    position: relative;
+    margin-top: 32px;
+}
+
+.header .cart .iconfont {
+    font-size: 24px;
+}
+
+.header .cart i {
+    padding: 0 5.5px;
+    position: absolute;
+    /* right: 1px; */
+    /* left 左对齐万一文字多向右撑开 */
+    left: 15px;
+    top: 1px;
+    /* width: 20px; */
+    height: 15px;
+    background-color: #E26237;
+    border-radius: 7.5px;
+    font-size: 14px;
+    line-height: 15px;
+    color: #FFFEFE;
+}
+
+/* 底部 */
+.footer {
+    height: 580px;
+    background-color: #F5F5F5;
+}
+
+/* 服务 */
+.footer .service {
+    padding: 60px 0;
+    height: 178px;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.footer .service ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer .service li {
+    display: flex;
+    width: 190px;
+    height: 58px;
+    /* background-color: skyblue; */
+}
+
+.footer .service li h5 {
+    margin-right: 20px;
+    width: 58px;
+    height: 58px;
+    background-image: url(../images/sprite.png);
+}
+
+.footer .service li p {
+    font-size: 28px;
+    line-height: 58px;
+}
+
+.footer .service li:nth-child(2) h5 {
+    background-position: 0 -58px;
+}
+
+.footer .service li:nth-child(3) h5 {
+    background-position: 0 -116px;
+}
+
+.footer .service li:nth-child(4) h5 {
+    background-position: 0 -174px;
+}
+
+/* 帮助中心 */
+.footer .help {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    height: 302px;
+    /* background-color: pink; */
+}
+
+/* left */
+.footer .help .left {
+    display: flex;
+}
+
+.footer .help .left dl {
+    margin-right: 84px;
+}
+
+.footer .help .left dl:last-child {
+    margin-right: 0;
+}
+
+.footer .help .left dt {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.footer .help .left dd {
+    margin-bottom: 10.5px;
+}
+
+.footer .help .left dd a {
+    color: #969696;
+}
+
+.footer .help .left dd .iconfont {
+    color: #5EB69C;
+}
+
+/* right */
+
+.footer .help .right ul {
+    display: flex;
+}
+
+.footer .help .right li:first-child {
+    margin-right: 55px;
+}
+
+.footer .help .right img {
+    height: 120px;
+    width: 120px;
+}
+
+.footer .help .right p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #969696;
+    text-align: center;
+}
+
+/* 版权 */
+.copyright {
+    text-align: center;
+}
+
+.copyright p {
+    margin-bottom: 10px;
+    color: #A1A1A1;
+}
+
+.copyright p a {
+    margin: 0 10px;
+    color: #A1A1A1;
+}
