@@ -17,7 +17,7 @@
     display: flex;
     /* flex 布局 父级宽度不够子集被挤小 增大父级尺寸可解决 */
     width: 3720px;
-    
+
 }
 
 /* 侧导航 */
@@ -29,6 +29,7 @@
     height: 500px;
     background-color: rgba(0, 0, 0, 0.42);
 }
+
 .subnav li {
     display: flex;
     justify-content: space-between;
@@ -115,7 +116,7 @@
     /* background-color: pink; */
 }
 
-.title .left{
+.title .left {
     display: flex;
 }
 
@@ -124,12 +125,12 @@
     margin-right: 35px;
 }
 
-.title .left p{
+.title .left p {
     align-self: end;
     color: #A1A1A1;
 }
 
-.title .right .more{
+.title .right .more {
     line-height: 42px;
     color: #A1A1A1;
 }
@@ -139,7 +140,7 @@
 }
 
 /* 好物 公共样式 */
-.bd ul{
+.bd ul {
     display: flex;
     justify-content: space-between;
 }
@@ -165,7 +166,7 @@
     font-size: 20px;
 }
 
-.goods .bd li .txt p{
+.goods .bd li .txt p {
     font-size: 18px;
     color: #AA2113;
 }
@@ -262,7 +263,7 @@
     margin-right: 58px;
 }
 
-.title .right ul a{
+.title .right ul a {
     display: block;
     margin-left: 6px;
     padding: 0 7px;
@@ -323,7 +324,7 @@
 
 }
 
-.content .price{
+.content .price {
     font-size: 18px;
     color: #AA2113;
 }
@@ -367,11 +368,140 @@
 }
 
 /* 鼠标悬停li */
-.content .right li:hover .cover{
+.content .right li:hover .cover {
     bottom: 0;
 }
 
 
 .content .right li:hover {
     border: 2px solid #00BE9A;
+}
+
+/* 服饰 */
+.clothes .title {
+    margin-bottom: 20px;
+}
+
+/* 餐厨 */
+.kitchen .title {
+    margin-bottom: 20px;
+}
+
+/* 居家 */
+.home .title {
+    margin-bottom: 20px;
+}
+
+/* 最新专题 */
+
+.new {
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+/* .new .title {
+    margin-top: 100px;
+} */
+
+.new .content1 {
+    height: 355px;
+    /* background-color: pink; */
+}
+
+.new .content1 ul {
+    display: flex;
+    width: 1280px;
+    justify-content: space-between;
+}
+
+.new .content1 li {
+    width: 405px;
+    height: 355px;
+    /* background-color: pink; */
+}
+
+.new .content1 li a .pic,
+.new .content1 li a img {
+
+    width: 405px;
+    height: 288px;
+}
+
+.new .content1 li a .pic {
+    position: relative;
+}
+
+.new .content1 li a .txt {
+    display: flex;
+    padding: 0 15px;
+    justify-content: space-between;
+    width: 405px;
+    height: 67px;
+    align-items: center;
+    /* background: skyblue; */
+}
+
+.new .content1 li a .txt p {
+    font-size: 14px;
+    color: #666;
+}
+
+.new .content1 li a .txt .first p span {
+    margin-right: 20.5px;
+    margin-left: 2px;
+}
+
+.new .content1 li a .txt .second p span {
+    margin-left: 2px;
+}
+
+.new .content1 li:first-child a .txt .first p .active {
+    color: red;
+}
+
+.new .content1 .pic .cover1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 405px;
+    height: 90px;
+    background-image: linear-gradient(180deg, rgba(137, 137, 137, 0.00) 0%, rgba(0, 0, 0, 0.90) 100%);
+
+}
+
+.new .content1 .pic .cover1 .left {
+    width: 270px;
+}
+
+.new .content1 .pic .cover1 .left h4 {
+    font-size: 20px;
+    font-weight: 350;
+    color: #FFFFFF;
+    font-family: PingFangSC-Regular;
+}
+
+.new .content1 .pic .cover1 .left p {
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+
+.new .content1 .pic .cover1 .right {
+    padding: 0 7px;
+    height: 25px;
+    background-color: #fff;
+}
+
+.new .content1 .pic .cover1 .right p {
+    font-size: 18px;
+    color: #AA2113;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 25px;
+    font-weight: 400;
 }
